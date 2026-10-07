@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00:00.350 --> 00:00:05.150
+You can probably recognize this letter, even with pieces missing.
+
+00:00:05.150 --> 00:00:07.070
+Can a network do the same?
+
+00:00:08.170 --> 00:00:10.618
+This is a Hopfield network.
+
+00:00:10.618 --> 00:00:15.514
+We'll give it three patterns to remember: H, T, and X.
+
+00:00:16.614 --> 00:00:20.380
+Each pixel becomes a neuron, either on or off.
+
+00:00:20.380 --> 00:00:23.982
+Every neuron connects to every other neuron.
+
+00:00:25.082 --> 00:00:28.450
+Learning changes the strength of those connections.
+
+00:00:28.450 --> 00:00:33.602
+Together, the connections encode the patterns we want the network to remember.
+
+00:00:34.702 --> 00:00:37.034
+Now we give it a damaged letter.
+
+00:00:37.034 --> 00:00:42.790
+One neuron at a time, the network checks its connections and updates its state.
+
+00:00:43.890 --> 00:00:48.140
+We can track this process with a number called energy.
+
+00:00:48.140 --> 00:00:51.524
+As the network updates, energy never rises.
+
+00:00:51.524 --> 00:00:54.594
+Eventually, the pattern stops changing.
+
+00:00:55.694 --> 00:00:59.839
+But settling down doesn't always mean remembering correctly.
+
+00:00:59.839 --> 00:01:03.086
+Too much noise can lead to a different pattern.
+
+00:01:04.186 --> 00:01:05.777
+Now try it yourself.
+
+00:01:05.777 --> 00:01:11.026
+Damage a letter, press Recall, and see what the network remembers.
